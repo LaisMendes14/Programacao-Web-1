@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #eef1f5; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px 20px; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 35px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #2c3e50; margin-bottom: 25px; font-size: 1.5em; }
+        label { color: #555; font-size: 1em; }
+        textarea { display: block; width: 100%; padding: 10px; margin: 12px 0 15px; border: 2px solid #ddd; border-radius: 6px; font-size: 1em; font-family: inherit; resize: vertical; }
+        textarea:focus { border-color: #3498db; outline: none; }
+        p { color: #555; font-size: 1.1em; }
+        #contagem { font-weight: bold; color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 8 - Contador de Caracteres</h1>
+        <label for="campo-texto">Digite algo:</label>
+        <textarea id="campo-texto" rows="4" placeholder="Escreva aqui..."></textarea>
+        <p>Total de caracteres: <span id="contagem">0</span></p>
+    </div>
+
+    <script>
+        const campoTexto = document.getElementById('campo-texto');
+        const contagem = document.getElementById('contagem');
+
+        campoTexto.addEventListener('input', function () {
+            contagem.textContent = campoTexto.value.length;
+        });
+    </script>
+</body>
+</html>

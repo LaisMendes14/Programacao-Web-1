@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cor da Página</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #eef1f5; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 40px 20px; transition: background-color 0.3s; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 35px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #2c3e50; margin-bottom: 25px; font-size: 1.5em; }
+        button { background-color: #3498db; color: white; border: none; padding: 12px 28px; border-radius: 6px; font-size: 1em; cursor: pointer; }
+        button:hover { background-color: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 3 - Alterar Cor da Página</h1>
+        <button id="btn-cor">Mudar Cor</button>
+    </div>
+
+    <script>
+        const botao = document.getElementById('btn-cor');
+
+        botao.addEventListener('click', function () {
+            const cores = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12', '#9b59b6'];
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            document.body.style.backgroundColor = corAleatoria;
+        });
+    </script>
+</body>
+</html>

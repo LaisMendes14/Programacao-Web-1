@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Completa HTML5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #eef1f5;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover { text-decoration: underline; }
+        main {
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+        }
+        section h2 { color: #2c3e50; margin-bottom: 10px; }
+        section p { line-height: 1.7; color: #555; }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <p>Um site com estrutura semântica HTML5</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo</h2>
+            <p>Esta é a página inicial do site. Aqui você encontra informações gerais sobre o projeto.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Este site foi criado como exercício da disciplina de Programação Web, utilizando as tags semânticas do HTML5.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo e-mail: contato@exemplo.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Laís Mendes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
